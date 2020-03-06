@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+//config统一管理
+def androidId = rootProject.ext.androidId
+def dps = rootProject.ext.dependencies
+
+android {
+
+    compileSdkVersion androidId.compileSdkVersion
+    buildToolsVersion androidId.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion androidId.minSdkVersion
+        targetSdkVersion androidId.targetSdkVersion
+        versionCode androidId.versionCode
+        versionName androidId.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation dps.kotlin
+    implementation dps.appcompat
+    implementation dps.core
+    implementation dps.constraint
+    testImplementation dps.junit
+    androidTestImplementation dps.textJunit
+    androidTestImplementation dps.espressoCore
+
+    api dps.gson
+    api dps.glide
+    api dps.okhttp
+    api dps.interceptor
+    api dps.rxjava
+    api dps.rxandroid
+    api dps.retrofit
+    api dps.convertergson
+    api dps.rxadapter
+
+    api dps.arouter
+}

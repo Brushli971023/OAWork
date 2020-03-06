@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.AuthCodeActivity">
+
+    <com.example.common.widget.StatusBarView
+        android:id="@+id/authCode_statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/authCode_back"
+        android:src="@drawable/ic_action_back"
+        android:layout_margin="10dp"
+        android:layout_below="@id/authCode_statusBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:text="验证手机号"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="15dp"
+        android:text="请输入发送至 +86 17552749828 的6位验证码，有效期10分钟。如未收到，请尝试重新获取验证码。"
+        android:fontFamily="serif"
+        android:layout_marginTop="230dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.example.usercenter.ui.custom.PhoneCode
+        android:id="@+id/phoneCode"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.example.usercenter.ui.custom.CountDownText
+        android:id="@+id/text_countDown"
+        android:layout_margin="30dp"
+        android:layout_below="@id/phoneCode"
+        android:text="点击获取验证码"
+        android:textColor="#2196F3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

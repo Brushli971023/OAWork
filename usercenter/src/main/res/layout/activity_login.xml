@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.LoginActivity">
+
+    <com.example.common.widget.StatusBarView
+        android:id="@+id/login_statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinner_language"
+        android:layout_below="@id/login_statusBar"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:text="登录微办公"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:textSize="15dp"
+        android:text="请使用微办公账号登录"
+        android:fontFamily="serif"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:background="@drawable/button_background_blue"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Spinner
+            android:id="@+id/spinner_head"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_gravity="center"
+            android:background="#3B000000"
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+        <EditText
+            android:id="@+id/edit_login"
+            android:padding="10dp"
+            android:hint="请输入您的电话号码"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <TextView
+        android:textSize="15dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#03A9F4"
+        android:text="使用邮箱登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="15dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="20dp"
+        android:text="还没有帐号？"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_toRegister"
+        android:textSize="15dp"
+        android:autoLink="all"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="120dp"
+        android:textColor="#03A9F4"
+        android:text="立即注册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/btu_login_next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:text="下  一  步"
+        android:textColor="#fff"
+        android:background="@drawable/button_background_gray_fill"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="10dp"
+            android:text="点击下一步代表你已阅读并同意"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="服务协议"
+            android:textSize="13dp"
+            android:textColor="#03A9F4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="和"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="13dp"
+            android:text="隐私政策"
+            android:textColor="#03A9F4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

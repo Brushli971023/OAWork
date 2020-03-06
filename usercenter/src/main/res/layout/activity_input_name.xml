@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.InputNameActivity">
+
+
+    <com.example.common.widget.StatusBarView
+        android:id="@+id/inputName_statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/inputName_back"
+        android:src="@drawable/ic_action_back"
+        android:layout_margin="10dp"
+        android:layout_below="@id/inputName_statusBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:text="填写姓名"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:textSize="15dp"
+        android:text="为方便大家与你联系，请在下方填写真实姓名。"
+        android:fontFamily="serif"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:background="@drawable/button_background_blue"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/edit_inputName"
+            android:padding="10dp"
+            android:hint="请填写真实姓名"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btu_inputName_next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:text="下  一  步"
+        android:textColor="#fff"
+        android:background="@drawable/button_background_gray_fill"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

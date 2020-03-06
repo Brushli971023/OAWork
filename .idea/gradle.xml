@@ -4,7 +4,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="delegatedBuild" value="true" />
         <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -12,6 +11,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/module-calendar" />
+            <option value="$PROJECT_DIR$/module-cloud" />
+            <option value="$PROJECT_DIR$/module-contact" />
+            <option value="$PROJECT_DIR$/module-news" />
+            <option value="$PROJECT_DIR$/module-teammanager" />
+            <option value="$PROJECT_DIR$/module-worktable" />
+            <option value="$PROJECT_DIR$/usercenter" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
